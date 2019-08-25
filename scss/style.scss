@@ -223,6 +223,7 @@ header{
                 margin-bottom: 1rem;
                 position: relative;
                 left: -4rem;
+                text-shadow: -2px -2px 0 $color_jump, 2px -2px 0 $color_jump, -2px 2px 0 $color_jump, 2px 2px 0 $color_jump;
                 transform: rotate(350deg);
                 @media (max-width:414px) {
                     left: 0rem;

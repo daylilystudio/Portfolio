@@ -383,6 +383,7 @@ header .menu li a {
   margin-bottom: 1rem;
   position: relative;
   left: -4rem;
+  text-shadow: -2px -2px 0 #9B414B, 2px -2px 0 #9B414B, -2px 2px 0 #9B414B, 2px 2px 0 #9B414B;
   -webkit-transform: rotate(350deg);
           transform: rotate(350deg);
 }
