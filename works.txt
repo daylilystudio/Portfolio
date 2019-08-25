@@ -1,0 +1,33 @@
+＊WEBSITE
+Uber Eats
+https://www.17life.com/events/union/
+Animate.css 搭配 wow.js 動態載入、偽類 :target 燈箱效果
+
+17好日子
+https://www.17life.com/events/pchome20190817/
+jQuery 選單定位、套用 js 網頁跳轉燈箱
+
+台灣人壽
+https://www.17life.com/events/taiwanlife/
+CSS Flexbox 排版、背景圖視差滾動
+
+女王節活動頁
+https://www.17life.com/join/template?test=2019-05-10
+活動頁模板
+
+Bootstrap網頁
+https://daylilystudio.github.io/LilySweety/public/
+使用 Bootstrap4 排版的網頁
+
+玳力力插畫網
+http://daylily.tw
+選單滑入 jQuery 語法、Fancybox 燈箱
+
+＊MOCKUP
+插畫網頁mockup
+https://sketch.cloud/s/AVGOR
+插畫網頁之視覺稿，使用 Sketch 排版
+
+年菜活動mockup
+https://xd.adobe.com/spec/06d0de9e-9977-4d83-77a3-e31a41869383-70e1/grid
+活動頁視覺稿，使用 AdobeXD 排版

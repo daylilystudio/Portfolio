@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MingHsuan Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/favorite.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css" rel="stylesheet" />
+
+
+<body>
+    
+<header>
+    <div class="logo"> </div>
+    <ul class="menu">
+        <li><a href="#about">ABOUT</a><div class="star_hover"></div></li>
+        <li><a href="#skill">SKILL</a><div class="star_hover"></div></li>
+        <li><a href="#works">WORKS</a><div class="star_hover"></div></li>
+        <li><a href="#contact">CONTACT</a><div class="star_hover"></div></li>
+    </ul>
+    <div class="top" onclick="location.href='#home'">↑</div>
+</header>
+
+<div id="Fullpage">
+
+    <!-- 區塊 1 -->
+    <div class="section">
+        <div class="container sectionHome">
+            <img src="img/MingHsuan.svg" alt="">
+            <h2>PORTFOLIO</h2>
+            <button id="btnGoDown">↓</button>
+        </div>
+    </div>
+
+    <!-- 區塊 2 -->
+    <div class="section">
+        <div class="container sectionAbout">
+            <div>
+                <h2>About_</h2>
+                <p>嗨！我是明萱(MingHsuan)，英文名Daylily，可以叫我Lily。國高中皆就讀美術，設計本科生，畢業於實踐媒傳所，4年以上網頁/視覺設計相關工作經驗。<br>
+                從小就對做網頁很感興趣，自行摸索了很多年。近年才開始較有系統的學習，發現比起畫圖，對寫程式的專注力反而還比較好(?)，可以坐一整天。相信繪畫、設計、前端會是我一生的志業。</p>
+                <span class="star01"></span>
+                <span class="star02"></span>
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- 區塊 3 -->
+    <div class="section">
+        <div class="container sectionSkill">
+            <ul>
+                <li>
+                    <img src="img/icon_skill01.png" alt="">
+                    <p>Communication</p>
+                    <p>媒體傳達設計</p>
+                    <span>Photoshop、illustrator、inDesign、
+                        AnimateCC、AfterEffect</span>
+                </li>
+                <li>
+                    <img src="img/icon_skill02.png" alt="">
+                    <p>User Interface</p>
+                    <p>介面設計</p>
+                    <span>wireframe→mockup→prototype<br />
+                        AdobeXD、Sketch</span>
+                </li>
+                <li>
+                    <img src="img/icon_skill03.png" alt="">
+                    <p>Front-end</p>
+                    <p>前端開發</p>
+                    <span>HTML5、CSS3、SCSS、RWD、
+                        jQuery、Bootstrap4、Git</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 區塊 4 -->
+    <div class="section">
+        <div class="container sectionWorks">
+            <ul>
+                <li onclick="window.open('https://www.17life.com/events/union/')" style="background-image: url(img/works_uber.jpg)">
+                    <div class="text_block">
+                        <h3>Uber Eats</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>Animate.css 搭配 wow.js 動態載入、偽類 :target 燈箱效果</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://www.17life.com/events/pchome20190817/')" style="background-image: url(img/works_17day.jpg);background-position: center -10px;">
+                    <div class="text_block">
+                        <h3>17好日子</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>jQuery 選單定位、套用 js 網頁跳轉燈箱</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://www.17life.com/events/taiwanlife/')" style="background-image: url(img/works_taiwanlife.jpg);background-position: center -10px;">
+                    <div class="text_block">
+                        <h3>台灣人壽</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>CSS Flexbox 排版、背景圖視差滾動</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://www.17life.com/join/template?test=2019-05-10')" style="background-image: url(img/works_girl.jpg);background-position: center -10px;">
+                    <div class="text_block">
+                        <h3>女王節活動頁</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>活動頁模板</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://daylilystudio.github.io/LilySweety/public/')" style="background-image: url(img/works_bootstrap.jpg)">
+                    <div class="text_block">
+                        <h3>Bootstrap網頁</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>使用 Bootstrap4 排版的網頁</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('http://daylily.tw')" style="background-image: url(img/works_daylily.jpg)">
+                    <div class="text_block">
+                        <h3>玳力力插畫網</h3>
+                        <div>
+                            <p>WEBSITE</p>
+                            <span>選單滑入 jQuery 語法、Fancybox 燈箱</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://sketch.cloud/s/AVGOR')" style="background-image: url(img/works_daylilynew.jpg)">
+                    <div class="text_block">
+                        <h3>插畫網頁mockup</h3>
+                        <div>
+                            <p>MOCKUP</p>
+                            <span>插畫網頁之視覺稿，使用 Sketch 排版</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+                <li onclick="window.open('https://xd.adobe.com/spec/06d0de9e-9977-4d83-77a3-e31a41869383-70e1/grid')" style="background-image: url(img/works_year.jpg)">
+                    <div class="text_block">
+                        <h3>年菜活動mockup</h3>
+                        <div>
+                            <p>MOCKUP</p>
+                            <span>活動頁視覺稿，使用 AdobeXD 排版</span>
+                            <a>VIEW →</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <a href="https://mming.weebly.com/" target="_blank">看更多作品…</a>
+        </div>
+    </div>
+
+    <!-- 區塊 5 (footer) -->
+    <div class="section fp-auto-height footer">
+        <p>CONTACT ME</p>
+        <p>
+            <a href="mailto:ddaylily@gmail.com"><img src="img/icon_gmail.png" alt=""></a>
+            <a href="https://github.com/daylilystudio" target="_blank"><img src="img/icon_github.png" alt=""></a>
+            <a href="https://www.linkedin.com/in/daylilystudio/" target="_blank"><img src="img/icon_linkedin.png" alt=""></a>
+        </p>
+        <p class="copyRight">Copyright © 2019 by Daylily</p>
+    </div>
+
+</div>
+
+</body>
+
+<!-- jQuery.js v1.11.1 -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+<!-- fullPage.js v2.9.5 -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.js"></script>
+<script src="js/script.js"></script>
+</head>
+</html>
