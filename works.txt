@@ -20,9 +20,12 @@ https://daylilystudio.github.io/LilySweety/public/
 使用 Bootstrap4 排版的網頁
 
 玳力力插畫網
-http://daylily.tw
-選單滑入 jQuery 語法、Fancybox 燈箱
+https://daylily.tw
+jQuery、Swiper 插件、Fancybox 燈箱、canvas動畫
 
+
+
+(刪除)
 ＊MOCKUP
 插畫網頁mockup
 https://sketch.cloud/s/AVGOR

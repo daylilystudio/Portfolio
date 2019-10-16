@@ -540,7 +540,7 @@ header .menu li a {
 }
 
 .sectionWorks ul {
-  width: 100%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -552,8 +552,20 @@ header .menu li a {
   margin-top: 10rem;
 }
 
+@media (max-width: 1280px) {
+  .sectionWorks ul {
+    width: 85%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .sectionWorks ul {
+    width: 100%;
+  }
+}
+
 .sectionWorks ul li {
-  width: 23%;
+  width: 30%;
   height: 25vh;
   border: 4px solid #E1CD8D;
   border-radius: 20px;
