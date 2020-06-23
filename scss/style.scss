@@ -47,7 +47,7 @@ header{
     justify-content: space-between;
     align-items: center;
     @media (max-width:1280px) {
-        height: 3rem;
+        height: 2.75rem;
     }
     @media (max-width:414px) {
         justify-content: center;
@@ -81,6 +81,9 @@ header{
             }
             @media (max-width:414px) {
                 margin: 0 .5rem;
+            }
+            @media (max-width:320px) {
+                font-size: .8rem;
             }
             .star_hover{
                 display: none;
@@ -121,7 +124,7 @@ header{
     background-position: left 45px;
     background-repeat: no-repeat;
     @media (max-width:414px) {
-        background-position: left 30px;
+        background-position: left 0px;
         background-size: 40%;
     }
 }
@@ -133,7 +136,7 @@ header{
     background-size: 17%;
     @media (max-width:414px) {
         background-position: center 80px;
-        background-size: 30%;
+        background-size: 40%;
     }
 }
 #Fullpage .section:nth-of-type(4) {
@@ -144,7 +147,7 @@ header{
     background-size: 23%;
     @media (max-width:414px) {
         background-position: center 80px;
-        background-size: 35%;
+        background-size: 45%;
     }
 }
 #Fullpage .section:nth-of-type(5) {
@@ -169,13 +172,16 @@ header{
         position: relative;
         top: -10px;
         @media (max-width:414px) {
-            width: 100%;
+            width: 95%;
         }
     }
     h2{
         color: $color_light;
         font-size: 5em;
         letter-spacing: .2rem;
+        @media (max-width:414px) {
+            font-size: 4.5em;
+        }
     }
     button{
         position: absolute;
@@ -227,7 +233,7 @@ header{
                 padding-top: 9rem;
                 padding-left: 0rem;
             }
-            @media (max-width:320px) {
+            @media (max-width:375px) {
                 padding-top: 7rem;
             }
             h2{
@@ -251,12 +257,22 @@ header{
                 @media (max-width:414px) {
                     font-size: .8rem;
                 }
+                @media (max-width:414px) {
+                    line-height: 1.8;
+                }
                 span{
                     color: $color_bright;
                 }
                 &:nth-of-type(2) {
                     margin-top: 1.5rem;
                     margin-left: 1.5rem;
+                    @media (max-width:375px) {
+                        margin-top: 1rem;
+                        margin-left: 1rem;
+                    }
+                    @media (max-width:320px) {
+                        margin-left: 1.5rem;
+                    }
                     img {
                         margin-right: 1rem;
                         @media (max-width:1280px) {
@@ -290,8 +306,12 @@ header{
                 background: url(../img/star01.svg) no-repeat;
                 background-size: contain;
                 @media (max-width:414px) {
-                    top: 4rem;
-                    left: -2rem;
+                    top: 10.5rem;
+                    left: -3rem;
+                }
+                @media (max-width:375px) {
+                    top: 8.5rem;
+                    left: -2.5rem;
                 }
             }
             .star02{
@@ -304,7 +324,7 @@ header{
                 background-size: contain;
                 @media (max-width:414px) {
                     right: -3rem;
-                    top: -2rem;
+                    top: 3rem;
                     width: 30%;
                     height: 30%;
                 }
@@ -513,7 +533,6 @@ header{
     flex-direction: column;
     padding: 2rem;
     color: #fff;
-    font-size: 1.3em;
     p img{
         margin: .5rem;
         transition: all .6s;
@@ -526,6 +545,10 @@ header{
     }
     .copyRight{
         margin-top: 1rem;
+        font-size: 1.2rem;
+        @media (max-width:320px) {
+            font-size: 1rem;
+        }
     }
 }
 
