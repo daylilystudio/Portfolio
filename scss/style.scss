@@ -228,8 +228,10 @@ header{
             @media (max-width:1024px) {
                 width: 90%;
             }
-            @media (max-width:414px) {
+            @media (max-width:768px) {
                 width: 100%;
+            }
+            @media (max-width:414px) {
                 padding-top: 9rem;
                 padding-left: 0rem;
             }
@@ -351,8 +353,7 @@ header{
                 background-position: right 20px;
             }
             @media (max-width:320px) {
-                background-size: 70%;
-                background-position: right 0px;
+                opacity: 0;
             }
         }
     }
