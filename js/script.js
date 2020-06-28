@@ -4,10 +4,19 @@ $(document).ready(function(){
     $('#Fullpage').fullpage({
         navigation: true, // 顯示導行列
         navigationPosition: "right", // 導行列位置
-        anchors: ['home', 'about', 'skill', 'works', 'contact'],
+        anchors: ['home', 'about', 'experience', 'skill', 'works', 'contact'],
         scrollOverflow: true,
         fitToSection: false,
-        menu: 'header'
+        menu: 'header',
+        afterLoad: function (anchorLink, index) {
+            var loadedSection = $(this);
+            //using anchorLink
+            if (anchorLink == 'experience') {
+                $('header').fadeOut(100);
+            }else{
+                $('header').fadeIn(500);
+            }
+        }
     });
 
     //點擊往下

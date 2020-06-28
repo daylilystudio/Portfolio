@@ -129,6 +129,26 @@ header{
     }
 }
 #Fullpage .section:nth-of-type(3) {
+    background-color: $color_light;
+    background-image: url(../img/bg_curve.svg);
+    background-position: center 0px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    @media (max-width:1280px) {
+        background-position: center -15px;
+    }
+    @media (max-width:1024px) {
+        background-size: 110% ;
+        background-position: center 0px;
+    }
+    @media (max-width:414px) {
+        background-size: 140%;
+    }
+    @media (max-width:320px) {
+        background-size: 160%;
+    }
+}
+#Fullpage .section:nth-of-type(4) {
     background-color: $color_bright;
     background-image: url(../img/title_skill.svg);
     background-position: center 100px;
@@ -139,7 +159,7 @@ header{
         background-size: 40%;
     }
 }
-#Fullpage .section:nth-of-type(4) {
+#Fullpage .section:nth-of-type(5) {
     background-color: $color_main;
     background-image: url(../img/title_works.svg);
     background-position: center 100px;
@@ -150,7 +170,7 @@ header{
         background-size: 45%;
     }
 }
-#Fullpage .section:nth-of-type(5) {
+#Fullpage .section:nth-of-type(6) {
     background-color: $color_light;
 }
 
@@ -360,6 +380,292 @@ header{
 }
 
 //區塊 3
+.sectionExperience{
+    justify-content: flex-start;
+    flex-direction: column;
+    &>img{
+        margin-top: 6rem;
+        margin-bottom: 4rem;
+        @media (max-width:1280px) {
+            margin-top: 4.5rem;
+            width: 380px;
+            height: auto;
+        }
+        @media (max-width:768px) {
+            margin-top: 3.5rem;
+            margin-bottom: 3rem;
+            width: 300px;
+        }
+        @media (max-width:414px) {
+            margin-top: 2.2rem;
+            width: 200px;
+        }
+        @media (max-width:375px) {
+            margin-top: 2rem;
+            width: 180px;
+        }
+        @media (max-width:320px) {
+            margin-top: 1.8rem;
+            margin-bottom: 2rem;
+        }
+    }
+    .timeline{
+        padding-top: 2rem;
+        position: relative;
+        @media (max-width:1024px) {
+            padding-top: 8rem;
+        }
+        @media (max-width:768px) {
+            padding-top: 6rem;
+        }
+        @media (max-width:414px) {
+            padding-top: 3rem;
+            margin-bottom: 4rem;
+        }
+        @media (max-width:375px) {
+            padding-top: 2rem;
+            margin-bottom: 2rem;
+        }
+        &:before{
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background-image: linear-gradient(transparent 0%, $color_bright 10%, $color_bright 100%);
+            z-index: 2;
+            @media (max-width:414px) {
+                left: 0;
+            }
+        }
+        &:after{
+            content: "";
+            position: absolute;
+            width: 12px;
+            height: 60px;
+            bottom: -90px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color_bright;
+            @media (max-width:1024px) {
+                height: 80px;
+                bottom: -140px;
+            }
+            @media (max-width:414px) {
+                left: 0;
+                height: 50px;
+                bottom: -80px;
+            }
+            @media (max-width:320px) {
+                height: 30px;
+                bottom: -50px;
+            }
+        }
+        &_frame{
+            @include flexcenter;
+            justify-content:flex-start;
+            position: relative;
+            margin-bottom: 3.5rem;
+            z-index: 5;
+            @media (max-width:1280px) {
+                margin-bottom: 2rem;
+            }
+            @media (max-width:1024px) {
+                margin-bottom: 4rem;
+            }
+            @media (max-width:414px) {
+                margin-bottom: 3.5rem;
+            }
+            @media (max-width:320px) {
+                margin-bottom: 3rem;
+            }
+            @mixin timelineIcon {
+                content: "";
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                border: 4px solid $color_light;
+                background-size: 60%;
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+            &:nth-child(odd){
+                transform: translateX(calc(50% + 3rem + 40px/2.5));
+                @media (max-width:414px) {
+                    transform: translateX(3rem);
+                }
+                @media (max-width:375px) {
+                    transform: translateX(1.5rem);
+                }
+                :after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    left: -3rem;
+                    width: 3rem;
+                    height: 1px;
+                    background-color: $color_jump;
+                    @media (max-width:414px) {
+                        left: -2rem;
+                        width: 2rem;
+                    }
+                    @media (max-width:375px) {
+                        display: none;
+                    }
+                }
+                :before{
+                    @include timelineIcon;
+                    left: calc(-3rem - 40px);
+                    background-color: $color_jump;
+                    background-image: url(../img/icon_work.png);
+                    @media (max-width:414px) {
+                        left: calc(-2rem - 40px);
+                    }
+                    @media (max-width:375px) {
+                        left: calc(-.5rem - 40px);
+                    }
+                }
+                img{
+                    position: absolute;
+                    top: -100%;
+                    transform: translateY(-50%);
+                    left: calc(-3rem - 40px - 50px);
+                    transition: .5s all;
+                    opacity: 0;
+                }
+            }
+            &:nth-child(even){
+                transform: translateX(calc(-50% - 3rem - 40px/2.5));
+                flex-direction: row-reverse;
+                text-align: right;
+                @media (max-width:414px) {
+                    transform: translateX(3rem);
+                    flex-direction: row;
+                    text-align: left;
+                }
+                @media (max-width:375px) {
+                    transform: translateX(1.5rem);
+                }
+                :after{
+                    content: "";
+                    position: absolute;
+                    top: 50%;
+                    right: -3rem;
+                    width: 3rem;
+                    height: 1px;
+                    background-color: $color_jump;
+                    @media (max-width:414px) {
+                        right: auto;
+                        left: -2rem;
+                        width: 2rem;
+                    }
+                    @media (max-width:375px) {
+                        display: none;
+                    }
+                }
+                :before{
+                    @include timelineIcon;
+                    right: calc(-3rem - 40px);
+                    background-color: $color_jump;
+                    background-image: url(../img/icon_work.png);
+                    @media (max-width:414px) {
+                        right: auto;
+                        left: calc(-2rem - 40px);
+                    }
+                    @media (max-width:375px) {
+                        left: calc(-.5rem - 40px);
+                    }
+                }
+                img{
+                    position: absolute;
+                    top: -100%;
+                    transform: translateY(-50%);
+                    right: calc(-3rem - 40px - 50px);
+                    transition: .5s all;
+                    opacity: 0;
+                }
+            }
+            &:hover img{
+                opacity: 1;
+                top: 50%;
+            }
+
+            p {
+                color: $color_bright;
+                background-color: $color_jump;
+                padding: .5rem 1.5rem;
+                border-radius: 2rem;
+                font-weight: bold;
+                line-height: 1.2;
+                text-align: left;
+                white-space: nowrap;
+                @media (max-width:414px) {
+                    padding: .4rem 1rem;
+                }
+            }
+            .school{
+                background-color: $color_main;
+                &:after{
+                    background-color: $color_main ;
+                    z-index: 10;
+                }
+                &:before{
+                    @include timelineIcon;
+                    background-color: $color_main;
+                    background-image: url(../img/icon_school.png);
+                    z-index: 10;
+                }
+            }
+            section {
+                margin:0 .5rem;
+                font-size: 1.5rem;
+                @media (max-width:1280px) {
+                    font-size: 1.2rem;
+                }
+                @media (max-width:768px) {
+                    font-size: 1rem;
+                }
+                @media (max-width:320px) {
+                    font-size: .9rem;
+                }
+                h5{
+                    color: $color_main;
+                    font-weight: bold;
+                    margin-bottom: .25rem;
+                }
+                span{
+                    color: $color_jump;
+                }
+            }
+        }
+        &_road{
+            position: absolute;
+            opacity: .15;
+            width: 55%;
+            height: 60vh;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: 0;
+            background-image: linear-gradient(transparent 0%, rgba(#000,.2), #000, #000, rgba($color_main,0));
+            z-index: 1;
+            @media (max-width:1024px){
+                height: 80vh;
+                bottom: -20vh;
+            }
+            @media (max-width:414px){
+                display: none;
+            }
+        }
+    }
+}
+
+//區塊 4
 .sectionSkill ul{
     display: flex;
     justify-content: space-around;
@@ -408,7 +714,7 @@ header{
     }
 }
 
-//區塊 4
+//區塊 5
 .sectionWorks{
     flex-direction: column;
     ul{
