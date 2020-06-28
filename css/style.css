@@ -706,7 +706,13 @@ header .menu li a {
 @media (max-width: 375px) {
   .sectionExperience .timeline {
     padding-top: 2rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline {
+    padding-top: 1.5rem;
   }
 }
 
@@ -720,14 +726,21 @@ header .menu li a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(10%, #F7EAE4), to(#F7EAE4));
-  background-image: linear-gradient(transparent 0%, #F7EAE4 10%, #F7EAE4 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(247, 234, 228, 0)), color-stop(10%, rgba(247, 234, 228, 0.7)), to(rgba(247, 234, 228, 0.7)));
+  background-image: linear-gradient(rgba(247, 234, 228, 0) 0%, rgba(247, 234, 228, 0.7) 10%, rgba(247, 234, 228, 0.7) 100%);
   z-index: 2;
 }
 
 @media (max-width: 414px) {
   .sectionExperience .timeline:before {
+    width: 8px;
     left: 0;
+  }
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline:before {
+    left: 4px;
   }
 }
 
@@ -740,7 +753,8 @@ header .menu li a {
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  background-color: #F7EAE4;
+  background-color: rgba(247, 234, 228, 0.7);
+  z-index: 2;
 }
 
 @media (max-width: 1024px) {
@@ -752,6 +766,7 @@ header .menu li a {
 
 @media (max-width: 414px) {
   .sectionExperience .timeline:after {
+    width: 8px;
     left: 0;
     height: 50px;
     bottom: -80px;
@@ -760,6 +775,7 @@ header .menu li a {
 
 @media (max-width: 320px) {
   .sectionExperience .timeline:after {
+    left: 4px;
     height: 30px;
     bottom: -50px;
   }
@@ -864,7 +880,14 @@ header .menu li a {
   background-repeat: no-repeat;
   left: calc(-3rem - 40px);
   background-color: #9B414B;
-  background-image: url(../img/icon_work.png);
+  background-image: url(../img/icon_work.svg);
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame:nth-child(odd) :before {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -876,6 +899,12 @@ header .menu li a {
 @media (max-width: 375px) {
   .sectionExperience .timeline_frame:nth-child(odd) :before {
     left: calc(-.5rem - 40px);
+  }
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame:nth-child(odd) :before {
+    left: calc(-.5rem - 32px);
   }
 }
 
@@ -958,7 +987,14 @@ header .menu li a {
   background-repeat: no-repeat;
   right: calc(-3rem - 40px);
   background-color: #9B414B;
-  background-image: url(../img/icon_work.png);
+  background-image: url(../img/icon_work.svg);
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame:nth-child(even) :before {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 @media (max-width: 414px) {
@@ -971,6 +1007,12 @@ header .menu li a {
 @media (max-width: 375px) {
   .sectionExperience .timeline_frame:nth-child(even) :before {
     left: calc(-.5rem - 40px);
+  }
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame:nth-child(even) :before {
+    left: calc(-.5rem - 32px);
   }
 }
 
@@ -1007,6 +1049,12 @@ header .menu li a {
   }
 }
 
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame p {
+    padding: .4rem .8rem;
+  }
+}
+
 .sectionExperience .timeline_frame .school {
   background-color: #0E3150;
 }
@@ -1030,8 +1078,15 @@ header .menu li a {
   background-position: center;
   background-repeat: no-repeat;
   background-color: #0E3150;
-  background-image: url(../img/icon_school.png);
+  background-image: url(../img/icon_school.svg);
   z-index: 10;
+}
+
+@media (max-width: 320px) {
+  .sectionExperience .timeline_frame .school:before {
+    width: 32px;
+    height: 32px;
+  }
 }
 
 .sectionExperience .timeline_frame section {
